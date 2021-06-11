@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page </title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        *{
+            padding: 0%;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+        <img src="d.jpg" id=image alt="image" width="300px" height="200px">
+</body>
+<script>
+    setInterval(() => {
+        var width = document.body.clientWidth/2;
+        var height = document.body.clientHeight/2;
+        var  img= document.getElementById("image");
+        img.style.setProperty("position","relative")
+        img.style.setProperty('left', `${width - (img.clientWidth/2)}px`);
+        img.style.setProperty('top', `${height - (img.clientHeight/2)}px`);
+        console.log(width,height,img,img.style,)
+        }, 100);
+    
+</script>
+
+</html>

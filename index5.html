@@ -1,0 +1,136 @@
+<html>
+
+<head>
+
+</head>
+
+<body id=body>
+    <div>
+        <h1 id="heading">
+            LOGIN FROM
+        </h1>
+    </div>
+    <div>
+        <table>
+            <form method="post" >
+                <tr>
+                    <th class="lables">
+                        Enter Your name:
+                    </th>
+                    <th class="inputs">
+                        <input type="text" placeholder="enter Your name">
+                    </th>
+                </tr>
+                <tr>
+                    <th class="lables">
+                        Enter your Email:
+                    </th>
+                    <th class="inputs">
+                        <input type="email" placeholder="Enter Your Email">
+                    </th>
+                </tr>
+                <tr>
+                    <th class="lables">
+                        Enter Your Passsword:
+                    </th>
+                    <th class="inputs">
+                        <input type="password" placeholder="Enter Your Password">
+                    </th>
+                </tr>
+                <tr>
+                    <th >
+                        <input type="submit" id="submit">
+                    </th>
+                    <th>
+                        <input type="button" value="reset" id="btn">
+                    </th>
+                </tr>
+            </form>
+        </table>
+    </div>
+    <script>
+        console.log("done");
+
+        document.getElementById("heading").addEventListener("mouseover", function () {
+            // console.log(e);
+            console.log("heading mouseover Event");
+            // let vari0, vari1,vari3,vari4,vari5,vari2;
+            // vari0 = e.target;
+            // vari1 = e.type;
+            // vari3=e.offsetX;
+            // vari4=e.offsetY;
+            // vari5=e.clientX;
+            // vari2=e.clientY;
+            // console.log(vari0, vari1,vari3,vari4,vari5,vari2);
+
+        })
+        document.getElementById("heading").addEventListener("click", function (e) {
+            console.log(e);
+            console.log("heading click Event");})
+
+        document.getElementById("submit").addEventListener("click",function(e){console.log("you have clicked ...");
+        e.preventDefault();
+    })
+       let btn=document.getElementById("btn")
+        btn.addEventListener("dblclick",dc)
+        btn.addEventListener("mousedown",md)
+
+function dc() {
+    console.log("you have dubble clicked ...");
+} 
+function md(){console.log("you have mousedown... ")};
+
+
+ // document.addEventListener("mousemove",movechangecolor)
+
+//  function movechangecolor(e) {
+//     var body=document.querySelector("body");
+//     body.style.backgroundColor=`rgb(${e.clientY},${e.offsetY},${e.offsetX}`;
+//     console.log(e,"body change")
+// }
+
+
+//set a item in local storage 
+localStorage.setItem("email","google.com");
+localStorage.setItem("password","google.co.in");
+
+
+//delete an item from localstorge
+localStorage.removeItem("email");
+
+
+//delete everything from localstorge
+// localStorage.clear()
+
+//retive an item from localstorge
+let loc=localStorage.getItem("email");
+console.log(loc);
+loc=localStorage.getItem("password");
+console.log(loc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

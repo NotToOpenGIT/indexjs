@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <script src="js/index4.js"></script>
+</head>
+
+<body>
+    <h1>page heading</h1>
+    <br>
+    <div>it is a changeable div tag</div>
+    <br><br>
+    <a href="https://google.com" class="link_search">google</a>
+    <br><br>
+    <a href="https://yahoo.com" class="link_search">yahoo</a>
+    <br><br>
+    <a href="https://duckduckgo.com" class="link_search">duckduckgo</a>
+    <br><br>
+    <a href="https://bing.com" class="link_search">bing</a>
+    <br><br>
+
+</body>
+
+<!-- <script>
+    let find="gcom";
+    let links=document.links;
+    let href;
+    Array.from(links).forEach(function(element){
+        console.log(element);
+        href=element.href;
+        if(href.includes(find)){
+        console.log(href);
+    }})
+</script> -->
+
+<script>
+    // let change=document.querySelector("div");
+   
+    // change.addEventListener("click",changetext);
+    // function changetext() {
+        // let changebytext=document.createElement("input");
+        // changebytext.type="text"
+        // console.log(change.innerText)
+        //  change.innerText=changebytext;
+        // change.contentEditable="true"
+        
+
+
+    // }
+
+    document.querySelector("div").addEventListener("click",function() { document.querySelector("div").contentEditable="true"
+console.log(document.querySelector("div").innerText)})
+    
+        // document.querySelector("div").addEventListener("click",function(e){
+        //     let ele=e.target;
+        //      ele.contentEditable="true";
+        //     console.log(ele)
+        // })
+
+
+
+
+
+
+    
+</script>
+
+
+
+</html>

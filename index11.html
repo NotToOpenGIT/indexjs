@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE JAVASCRIPT</title>
+    <link rel="icon" href="twitter-icon.png">
+    <style>
+        #h1 {
+            position: relative;
+            left: 35vw;
+            top: 25vh;
+            padding: 10px;
+            width: fit-content;
+            background-color: yellow;
+            border-radius: 20px;
+            height: fit-content;
+            color: red;
+            border: 1px double black;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #h1:hover {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1">ITs A paragraphy....</p>
+    <h1 id="h1">CLOSE CURRENT PAGE....</h1>
+
+</body>
+
+<script>
+    document.getElementById("h1").addEventListener("click", () => {
+        close();
+    })
+</script>
+
+</html>
